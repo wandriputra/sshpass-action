@@ -9,6 +9,10 @@ inputs:
   password:
     description: "SSHPASS password"
     required: true
+  port: 
+    description: "PORT password"
+    required: false
+    default: 22
   run:
     description: "SSHPASS commands to run"
     required: true
@@ -25,4 +29,5 @@ runs:
   - ${{ inputs.host }}
   - ${{ inputs.username }}
   - ${{ inputs.password }}
+  - ${{ inputs.port }}
   - ${{ inputs.run }}
