@@ -11,8 +11,7 @@ inputs:
     required: true
   port: 
     description: "PORT password"
-    required: false
-    default: 22
+    required: true
   run:
     description: "SSHPASS commands to run"
     required: true
